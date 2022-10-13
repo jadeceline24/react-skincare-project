@@ -53,7 +53,7 @@ export const AboutText = styled.h2`
         opacity: 0;
         transform: scale(.5);
         transition: opacity 1s ease,transform 1s ease;
-        transition-delay: .1s;
+        
         
         @media (max-width: 30em){   
          width:30px;

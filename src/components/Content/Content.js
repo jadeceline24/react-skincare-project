@@ -8,7 +8,6 @@ import Img2 from '../../images/Img2.jpg'
 import Img3 from '../../images/Img3.jpg'
 import Img4 from '../../images/Img4.jpg'
 import { useRef } from 'react';
-import SplitText from '../../hook/SplitText3.min.js'
 gsap.registerPlugin(ScrollTrigger);
 
 const Content = () => {
@@ -29,7 +28,7 @@ const Content = () => {
               isMobile:"(max-width: 768px)",
     }, (context) => {
 
-      let { isMobile, isDesktop } = context.conditions
+      let { isDesktop } = context.conditions
 
         let tl = gsap.timeline({scrollTrigger:{
           trigger: content,

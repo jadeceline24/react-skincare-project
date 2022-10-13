@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import {GalleryCon, ImageCon, GalleryWrap, GalleryItem, GalleryImage, GalleryText,GalleryTitle,Wrap} from './GalleryStyle'
+import {GalleryCon, ImageCon, GalleryWrap, GalleryItem, GalleryImage, GalleryText,Wrap} from './GalleryStyle'
 import {photos} from '../../data/photos'
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -15,7 +15,7 @@ const Gallery = () => {
 
     useEffect(() => {
     let sections = gsap.utils.toArray(".scroll .panel");
-    let scrollTween = gsap.to(sections, {
+    gsap.to(sections, {
     xPercent: -100 * (sections.length - 1),
     ease: "none",
     duration: 6,

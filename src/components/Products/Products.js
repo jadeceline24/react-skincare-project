@@ -3,7 +3,6 @@ import {ProductContainer, ProductText, ProductBtn, ProductName, ProductWrap,Proj
 
 import {product} from '../../data/productdata'
 import { useState } from 'react'
-import { useEffect } from 'react'
 // import { useCallback } from 'react'
 // import { useLayoutEffect } from 'react'
 

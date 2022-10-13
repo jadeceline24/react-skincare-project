@@ -7,7 +7,6 @@ import ImageText4 from '../../images/imagetext4.jpg'
 import ImageText5 from '../../images/imagetext5.jpg'
 import {VideoBox, ContentVideo, AboutContainer,AboutText, AboutBtn,} from './VideoStyle'
 import  gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from 'react'
 import { useEffect } from 'react'
 
@@ -23,7 +22,7 @@ const Video = () => {
 
   useEffect ( () => {
 
-    const tl = gsap.timeline({scrollTrigger:{
+    gsap.timeline({scrollTrigger:{
         trigger: about,
         start: "20% center", 
         end: '80% center',
