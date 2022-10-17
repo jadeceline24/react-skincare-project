@@ -21,7 +21,7 @@ const Video = () => {
   let vid = useRef(null)
 
   useEffect ( () => {
-
+    
     gsap.timeline({scrollTrigger:{
         trigger: about,
         start: "20% center", 
@@ -37,6 +37,7 @@ const Video = () => {
       end: 'bottom center',
       toggleActions:"restart complete reverse reset",
       ease:'power2',
+      scrub: 1,
       }});   
         tl2.to([imageone,imagetwo,imagethree,imagefour,imagefive],{
             scale:1,
