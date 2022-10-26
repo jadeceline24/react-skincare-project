@@ -81,7 +81,7 @@ const Products = () => {
              } )}
             
             </ImageWrap>
-            <ProductBtn darkBg lightText>Shop Now</ProductBtn>
+            <ProductBtn darkBg lightText className='btn-text'>Shop Now</ProductBtn>
       </ProductContainer>
     </>
   )

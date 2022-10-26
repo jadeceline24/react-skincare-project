@@ -9,7 +9,7 @@ function App() {
   return (
       <Router>
         <GlobalStyle />
-        <Navbar />
+        <Navbar />  
         <Routes>
           <Route path='/' element={<HomePage />} />  
         </Routes>

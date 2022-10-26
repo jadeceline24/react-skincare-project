@@ -21,7 +21,12 @@ const Video = () => {
   let vid = useRef(null)
 
   useEffect ( () => {
-    
+  //   ScrollTrigger.create({
+  //     trigger: about,
+  //     start: "20% center", 
+  //     end: '80% center',
+  //     toggleClass: about,
+  // })  
     gsap.timeline({scrollTrigger:{
         trigger: about,
         start: "20% center", 
@@ -30,6 +35,8 @@ const Video = () => {
         pinSpacing: true, //not overlap
         ease:'power2',
         }});
+
+     
 
     const tl2 = gsap.timeline({scrollTrigger:{
       trigger: vid,
@@ -61,7 +68,7 @@ const Video = () => {
         <span className='imagefour line'><img ref={el => {imagefour = el}} src={ImageText4} alt="" /></span>, AND mineral 
         <span className='imagefive line'><img ref={el => {imagefive = el}} src={ImageText5} alt="" /></span> 
         REALMS.</AboutText>
-        <AboutBtn darkBg lightText>About Us</AboutBtn>
+        <AboutBtn darkBg lightText className='btn-text'>About Us</AboutBtn>
       </AboutContainer>
     </>
   )
