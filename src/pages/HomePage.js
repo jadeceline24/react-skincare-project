@@ -2,7 +2,6 @@ import React from 'react'
 import Content from '../components/Content/Content'
 import Hero from '../components/Hero/Hero'
 import CustomCursor from '../components/CustomCursor'
-import Footer from '../components/Footer/Footer'
 import Video from '../components/Video/Video'
 import Products from '../components/Products/Products'
 import Gallery from '../components/Gallery/Gallery'
@@ -63,7 +62,7 @@ const HomePage = () => {
       <Video />
       <Gallery /> 
       <Products />
-      <Footer />
+      
       {/* </div>)
   } */}
       </>
